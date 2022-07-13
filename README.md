@@ -42,6 +42,7 @@ and then, run consumer_normal.py to read messages from input_topic, aggregate th
 python consumer_normal.py
 
 if you want to run consumer with spark 
+
 python consumer_spark.py
 
 After that, you can get the ouput topic in kafka.
