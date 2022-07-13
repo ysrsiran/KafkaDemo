@@ -1,0 +1,9 @@
+{
+
+    "userId":"j11288092", "type":"event", "metadata":{
+    
+    "messageId":"123sfdafas-32487239857dsh98234", "sentAt":1534382518, "timestamp":1534382518, "receivedAt":0, "apiKey":"apikey1", "spaceId":"space1", "version":"v1"
+    
+    }, "event":"Played Movie", "eventData":{ "MovieID":"MIM4ddd4" }
+    
+}
