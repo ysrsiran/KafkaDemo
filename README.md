@@ -55,6 +55,8 @@ $ bin/kafka-console-consumer --topic output_topic  --from-beginning --bootstrap-
 
 or you can run 
 
-python get_output.py to check the output topic
+python get_output.py 
+
+to check the output topic
 
 
