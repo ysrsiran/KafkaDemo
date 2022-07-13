@@ -25,37 +25,65 @@ kafka-test.ipynb ------ jupyter notebook of consumer_normal.py, show step by ste
 Please install kafka and launch kafka service, check http://localhost:9021 is up,  and if you want run consumer_spark.py, please ensure you have installed spark on your enviroment.
 Before run the files, please ensure you have installed python-kafka
 
+```
+
 $pip install python-kafka
+
+```
 
 ## How to run
 
 if you have already created input_topic and output_topic, you can delete the topics by yourself or you can run clear_topics.py
 
+
+```
+
 python clear_topics.py
+
+```
 
 run producer.py to publish kafka topics(input_topic)
 
+```
+
 python producer.py 
 
+```
 and then, run consumer_normal.py to read messages from input_topic, aggregate the messages by userId and produce a summary item to output_topic
+
+```
 
 python consumer_normal.py
 
+```
+
 if you want to run consumer with spark 
 
+```
+
 python consumer_spark.py
+
+```
+
 
 After that, you can get the ouput topic in kafka.
 
 you can check the output topic by either 
 
-cd<#kafka directory#>
+```
+
+cd <#kafka directory#>
   
 $ bin/kafka-console-consumer --topic output_topic  --from-beginning --bootstrap-server localhost:9092
 
+```
+
 or you can run 
+```
 
 python get_output.py 
+
+```
 
 to check the output topic
 
